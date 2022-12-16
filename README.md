@@ -1,6 +1,6 @@
 # Password Generator
 
-Deployed address: 
+Deployed address:  
 
 Topics applied: JavaScript variables, functions, for loops, conditionals and built-in base object (Math)
 Project goal: Provide JavaScript code to animate the provided HTML password generator skeleton according to acceptance criteria
