@@ -1,16 +1,16 @@
 function init() {
-  var passLength = prompt('How long of a password?');
+  var passLength = prompt('How long would you like the password?');
     console.log(passLength);
     
     if(!passLength) return;
     
     if (passLength > 128){
-      alert("Error: The length is too long");
+      alert("Error: Length is too long");
         return init();
       }  
 
       if (passLength < 8){
-      alert("Error: The length is too short");
+      alert("Error: Length is too short");
       return init();
     }
 
@@ -18,10 +18,11 @@ function init() {
     var temp = "";
     var password = "";
     var alpha = "abcdefghijklmnopqrstuvwxyz";
-    var numbers = confirm("Do you want numbers in your password?");
-    var upper = confirm("Do you want uppercase letters in your password?");
-    var lower = confirm("Do you want lowercase letters in your password");
-    var special = confirm("Do you want special characters in your password?");
+    var numbers = confirm("Numbers in your password?");
+    var lower = confirm("Lowercase letters in your password");
+    var special = confirm("Special characters in your password?");
+    var upper = confirm("Uppercase letters in your password?");    
+    
     
     
     if (numbers) temp+="0123456789";

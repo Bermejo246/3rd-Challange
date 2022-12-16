@@ -1,40 +1,53 @@
 *,
 *::before,
+
 *::after {
   box-sizing: border-box;
 }
 
 html,
+
 body,
 .wrapper {
+
+  padding: 3;
   height: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 3;
+  
 }
 
 
 header {
+  
   text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  padding: 22px;
+  padding-top: 2px;
+  color: hsl(360, 91%, 36%);
+
 }
 
 
 body {
-  font-family: sans-serif;
+
+  text-align: center;
   background-color: whitesmoke;
+  font-family: sans-serif;
+  background-color: rgb(218, 230, 231);
+  
 }
 
 .wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+
+  padding-right: 25px;
+  padding-top: 35px;
+  padding-left: 25px;
+ 
 }
 
 
 
 .card {
+
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
@@ -43,43 +56,57 @@ body {
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 30px 40px;
+  padding: 7px 90px;
+
 }
 
 .card-header::after {
+
   content: " ";
   display: block;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
   text-align: center
+
 }
 
 .card-footer {
+
   text-align: center;
+  color:beige;
+
 }
 
 .card-body {
+
   min-height: 100px;
+color:beige;
 }
 
 
 .card-footer::before {
+
   content: " ";
   display: block;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
+  color:beige;
 }
 
 .card-footer::after {
+
   content: " ";
   display: block;
   clear: both;
+  color:beige;
+
 }
 
 .btn {
-  border: none;
+
+ 
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
@@ -94,26 +121,27 @@ body {
   cursor: pointer;
 }
 
-.float-right {
-  float: right;
+.btn:hover {
+  background-color: greenyellow;
+  color:red
 }
 
 button[disabled] {
+
   cursor: default;
   background: #c0c7cf;
+
 }
 
 
 #password {
   
-  border: none;
+  
   display: block;
   width: 100%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
-  padding-top: 15px;
-  padding-bottom: 85px;
+  padding-top: 100px;
+  padding-bottom: 75px;
   padding-left: 15px;
   padding-right: 15px;
   font-size: 1.2rem;
@@ -124,10 +152,11 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-
+  color: hsl(360, 91%, 36%);
 }
 
 @media (max-width: 690px) {
+
   .btn {
     padding: 10px 15px;
     font-size: 1rem;
@@ -136,12 +165,10 @@ button[disabled] {
   }
 
   #password {
+
     font-size: 1rem;
+
   }
 }
 
-@media (max-width: 500px) {
-  .btn {
-    font-size: 0.8rem;
-  }
-}
+
